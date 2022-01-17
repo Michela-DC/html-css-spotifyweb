@@ -44,15 +44,34 @@ main{
 }
 
 
-
-
-
 /* PLAYLIST-CONTAINER ------------------------------- */
 
 .main-container{
     flex-grow: 1;
     background-color: #141922;
+    /* overflow-y: scroll; */
 }
+
+.upgrade{
+    height: 89px;
+    background: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    z-index: 5;
+}
+
+.options{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.card-container{
+    display: flex;
+    column-gap: 10px;
+    /* oppure space-between? */
+}
+
 
 /* TOOLBAR ------------------------------- */
 
@@ -74,20 +93,21 @@ main{
     border: 2px solid greenyellow;
 }
 
-.logo, .playlist{
+.logo, .playlist, .upgrade, .recent, .popular{
     border: 1px dashed fuchsia;
 }
 
-.nav{
-    border: 1px dashed orange;
+.nav, .options, .suggested{
+    border: 1px dashed white;
 }
 
-.playlist-container{
+.main-container{
     border: 2px solid red;
 }
 
 .toolbar{
    border: 2px solid royalblue;
 }
+
 
 
