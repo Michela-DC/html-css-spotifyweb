@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar{
+    width: 227px;
+}
+
+.playlist-container{
+    flex-grow: 1;
+}
+
+.toolbar{
+    width: 100%;
+    height: 88px;
+}
+
+
+
+/* DEBUG */
+
+.main-container{
+    border: 2px solid purple;
+}
+
+.sidebar{
+    border: 2px solid greenyellow;
+}
+
+.playlist-container{
+    border: 2px solid red;
+}
+
+.toolbar{
+   border: 2px solid royalblue;
+}
+
+
