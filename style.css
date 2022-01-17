@@ -79,6 +79,13 @@ main{
     width: 100%;
     height: 88px;
     background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.song{
+    display: flex;
+    justify-content: flex-start;
 }
 
 
@@ -94,7 +101,7 @@ main{
 }
 
 .logo, .playlist, .upgrade, .recent, .popular{
-    border: 1px dashed fuchsia;
+    border: 1px dashed red;
 }
 
 .nav, .options, .suggested{
@@ -102,12 +109,17 @@ main{
 }
 
 .main-container{
-    border: 2px solid red;
+    border: 2px solid fuchsia;
 }
 
 .toolbar{
    border: 2px solid royalblue;
 }
+
+.song, .timeline-wrapper, .tools{
+    border: 1px dashed aqua;
+}
+
 
 
 
