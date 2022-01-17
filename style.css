@@ -38,7 +38,7 @@ main{
 
 .logo{
     padding: 20px 0;
-    height: 89px;
+    height: 90px;
     width: 75%;
 }
 
@@ -97,21 +97,41 @@ main{
 }
 
 
-
-
-/* PLAYLIST-CONTAINER ------------------------------- */
+/* MAIN-CONTAINER ------------------------------- */
 
 .main-container{
     flex-grow: 1;
+    font-size: 14px;
+    position: relative;
     background-color: #141922;
-    /* overflow-y: scroll; */
+}
+
+.upgrade-container{
+    height: 90px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 230px;
 }
 
 .upgrade{
-    height: 89px;
-    background: rgba(0, 0, 0, 0.5);
-    position: sticky;
-    z-index: 5;
+    padding: 10px 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.main-page{
+    height: calc(100vh - 88px);
+    overflow-y: scroll;
+    padding-top: 90px;
 }
 
 .options{
@@ -155,7 +175,7 @@ main{
     border: 2px solid greenyellow;
 }
 
-.logo, .playlist, .upgrade, .recent, .popular{
+.logo, .playlist, .upgrade-container, .recent, .popular{
     border: 1px dashed red;
 }
 
