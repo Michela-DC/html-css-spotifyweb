@@ -64,6 +64,7 @@
             </div>
         </aside>
 
+
         <!-- MAIN-CONTAINER -->
         <div class="main-container">
 
@@ -90,42 +91,54 @@
     
                     <div class="cards-container">
                         <div class="card-wrapper">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <figure class="card-header">
+                                <img src="img/metal_lifting.jpg" alt="">
+                            </figure>
                             <div class="card-info">
                                 <h3>Heavy Metal</h3>
                                 <p class="playlist-artists">Subtitle</p>
                             </div>
                         </div>
                         <div class="card-wrapper">
-                            <img src="img/stranger.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/stranger.jpeg" alt="">
+                            </figure>
                             <div class="card-info">
                                 <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soudtrack)</h3>
                                 <p>Kyle Dixon & Michael Stein</p>
                             </div>
                         </div>
                         <div class="card-wrapper">
-                            <img src="img/aquietplace.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/aquietplace.jpeg" alt="">
+                            </figure>
                             <div class="card-info">
                                 <h3>A quiet place</h3>
                                 <p class="playlist-artists">Subtitle</p>
                             </div>
                         </div>
                         <div class="card-wrapper">
-                            <img src="img/split.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/split.jpeg" alt="">
+                            </figure>
                             <div class="card-info">
                                 <h3>Split</h3>
                                 <p class="playlist-artists">Subtitle</p>
                             </div>
                         </div>
                         <div class="card-wrapper">
-                            <img src="img/cure.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/cure.jpeg" alt="">
+                            </figure>
                             <div class="card-info">
                                 <h3>A cure for wellness</h3>
                                 <p class="playlist-artists">Subtitle</p>
                             </div>
                         </div>
                         <div class="card-wrapper">
-                            <img src="img/sinister.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/sinister.jpeg" alt="">
+                            </figure>
                             <div>
                                 <h3>Split</h3>
                                 <p class="playlist-artists">Subtitle</p>
@@ -143,11 +156,15 @@
                     
                     <div class="cards-container">
                         <div class="card-wrapper">
-                            <img src="img/radar.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/radar.jpeg" alt="">
+                            </figure>
                             <h3>Release Radar</h3>
                         </div>
                         <div class="card-wrapper">
-                            <img src="img/mixdaily.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/mixdaily.jpeg" alt="">
+                            </figure>
                             <h3>Daily Mix 1</h3>
                         </div>
                     </div>
@@ -161,14 +178,18 @@
                     
                     <div class="cards-container">
                         <div class="card-wrapper">
-                            <img src="img/youg.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/youg.jpeg" alt="">
+                            </figure>
                             <div class="card-info">
                                 <h3>Young and Beautiful</h3>
                                 <p class="playlist-artists">Lana Del Rey</p>
                             </div>
                         </div>
                         <div class="card-wrapper">
-                            <img src="img/einaudi.jpeg" alt="">
+                            <figure class="card-header">
+                                <img src="img/einaudi.jpeg" alt="">
+                            </figure>
                             <div class="card-info">
                                 <h3>Ludovico Einaudi</h3>
                                 <p class="playlist-artists">Artista</p>
@@ -181,13 +202,14 @@
         </div> <!-- fine main-container -->
 
     </main>
-
     <!-- TOOLBAR -->
     <div class="toolbar">
 
         <div class="song">
             <div class="song-info">
-                <img src="img/sinister.jpeg" alt="">
+                <figure>
+                    <img src="img/sinister.jpeg" alt="">
+                </figure>
                 <div>
                     <div class="artist">Sinister</div>
                     <div class="song-name">Brano Nome</div>
@@ -199,33 +221,51 @@
             </div>
         </div>
 
-        <div class="timeline-wrapper">
-            <div class="buttons">
-                <i class="fas fa-random"></i>
-                <i class="fas fa-step-backward"></i>
-                <i class="play-button far fa-play-circle"></i>
-                <i class="fas fa-step-forward"></i>
-                <i class="fas fa-redo"></i>
-            </div>
+        <div class="player">
+            <ul class="buttons">
+                <li>
+                    <i class="fas fa-random"></i>
+                </li>
+                <li>
+                    <i class="fas fa-step-backward"></i>
+                </li>
+                <li>
+                    <i class="play-button far fa-play-circle"></i> 
+                </li>
+                <li>
+                    <i class="fas fa-step-forward"></i>
+                </li>
+                <li>
+                    <i class="fas fa-redo"></i>
+                </li>
+            </ul>
+
             <div class="timeline">
-                <div>0:25</div>
+                <span>0:25</span>
                 <div class="timebar">
                     <div class="time-progress"></div>
                 </div>
-                <div>4:35</div>
+                <span>4:35</span>
             </div>
         </div>
 
-        <div class="tools">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-tv"></i>
-            <i class="fas fa-volume-up"></i>
+        <ul class="tools">
+            <li>
+                <i class="fas fa-bars"></i>
+            </li>
+            <li>
+                <i class="fas fa-tv"></i>
+            </li>
+            <li>
+                <i class="fas fa-volume-up"></i>
+            </li>
             <div class="timebar">
                 <div class="time-progress"></div>
             </div>
-        </div>
+        </ul>
 
     </div> <!-- fine toolbar -->
+
 
 </body>
 </html>

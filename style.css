@@ -144,11 +144,6 @@ main{
     padding: 110px 20px 0 20px;
 }
 
-.main-content img{
-    height: 178px;
-    margin-bottom: 15px;
-}
-
 .main-content p{
     color: #717171;
     font-size: 13px;
@@ -189,6 +184,16 @@ main{
     width: 178px;
 }
 
+.card-header{
+    width: 178px;
+    height: 178px;
+    margin-bottom: 15px;
+}
+
+.main-content img{
+    width: 100%;
+}
+
 .card-info{
     text-align: center;
 }
@@ -196,16 +201,6 @@ main{
 .card-info h3{
     margin-bottom: 10px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* TOOLBAR ------------------------------- */
 
@@ -215,9 +210,9 @@ main{
     background-color: #282828;
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
     position: absolute;
     bottom: 0;
+    /* Con queste due ultime proprietà, anche quando rimpicciolisco verticalmente lo schermo, la toolbar rimane fissa  */
 }
 
 .song{
@@ -225,7 +220,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 5px;
+    column-gap: 10px;
+    padding: 0 5px 0 10px;
 }
 
 .song-info{
@@ -251,8 +247,8 @@ main{
     padding-right: 12px;
 }
 
-.timeline-wrapper{
-    flex-basis: 525px;
+.player{
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,11 +277,15 @@ main{
 .timeline{
     width: 100%;
     font-size: 11px;
+    display: flex;
+    column-gap: 20px;
 }
 
 .timebar{
-    width: 430px;
-    height: 4px;
+    /* width: 150px;
+    height: 4px; 
+    non servono più perchè ho dato flex-grow */
+    flex-grow: 1;
     background-color: #717171;
     border-radius: 10px;
 }
@@ -298,8 +298,10 @@ main{
 }
 
 .tools{
-    flex-basis: 210px;
-    font-size: 14px;
+    display: flex;
+    column-gap: 15px;
+    font-size: 13px;
+    padding-right: 10px;
 }
 
 .tools .timebar{
