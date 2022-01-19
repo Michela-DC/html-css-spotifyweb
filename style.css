@@ -19,10 +19,17 @@ a{
     color: inherit;
 }
 
+button{
+    border: none;
+    background-color: transparent;
+    color: currentColor;
+    text-align: left;
+}
+
 main{
     display: flex;
     flex-grow: 1;
-    height: 100%;
+    height: calc(100vh - 88px);
 }
 
 /* SIDEBAR ------------------------------- */
@@ -31,14 +38,14 @@ main{
     flex-basis: 230px;
     flex-shrink: 0;
     background-color: #000000;
-    font-size: 13px;
-    padding: 0 20px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
+    color: #7B7E82;
 }
 
 .logo{
-    padding-top: 20px;
+    padding: 20px 20px;
     height: 90px;
     width: 75%;
 }
@@ -47,6 +54,11 @@ main{
     display:flex;
     column-gap: 10px;
     align-items: center;
+    padding: 0 20px;
+}
+
+.sidebar li:hover{
+    color: white;
 }
 
 .sidebar a{
@@ -55,7 +67,7 @@ main{
 }
 
 .main-menu{
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .main-menu svg, .user svg{
@@ -67,6 +79,10 @@ main{
     margin-bottom: 10px;
 }
 
+.main-menu li:first-child{
+    border-left: 2px solid #ADFF2E;
+}
+
 .playlist-wrapper{
     display: contents;
 }
@@ -75,6 +91,7 @@ main{
     margin-bottom: 10px;
     color: #fff;
     text-transform: uppercase;
+    padding: 0 20px;
 }
 
 .playlist{
@@ -87,13 +104,11 @@ main{
 }
 
 .create-playlist{
-    background-color: #000000;
-    color: #717171;
-    border: none;
     display: flex;
     align-items: center;
     column-gap: 10px;
     margin-bottom: 18px;
+    padding: 0 20px;
 }
 
 .create-playlist i{
@@ -103,13 +118,12 @@ main{
     padding: 7px;
 }
 
-.nav-footer{
-    background-color: black;
+.create-playlist i:hover{
+    background-color: white;
 }
 
-.install{
-    width: 186px;
-    color: #717171;
+.sidebar button:hover{
+    color: white;
 }
 
 .install::after{
@@ -120,18 +134,15 @@ main{
     margin-top: 15px;
 }
 
-.install a{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+.install{
+    width: 100%;
+    padding: 15px 20px;
 }
 
 .install svg{
     width: 15px;
-}
-
-.install, .user{
-    padding: 10px 0;
+    vertical-align: bottom;
+    margin-right: 10px;
 }
 
 .user{
@@ -140,6 +151,7 @@ main{
     display: flex;
     align-items: center;
     column-gap: 10px;
+    padding: 0 20px 10px 20px ;
 }
 
 .user-pic{
@@ -192,7 +204,7 @@ main{
 }
 
 .main-content p{
-    color: #717171;
+    color: #7B7E82;
 }
 
 .options, .recent, .suggested, .popular{
@@ -204,7 +216,7 @@ main{
     display: flex;
     justify-content: center;
     column-gap: 20px;
-    color: #717171;
+    color: #7B7E82;
 }
 
 .options a:hover{
@@ -220,7 +232,7 @@ main{
 .options li:first-child::after{
     content: '';
     display: block;
-    height: 1px;
+    height: 2px;
     width: 40%;
     background-color: #ADFF2E;
     margin-top: 5px;
@@ -299,7 +311,7 @@ main{
     background-color: #282828;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     bottom: 0;
     /* Con queste due ultime proprietà, anche quando rimpicciolisco verticalmente lo schermo, la toolbar rimane fissa  */
 }
