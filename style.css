@@ -222,7 +222,9 @@ main{
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     column-gap: 20px;
+    row-gap: 30px;
     color: #7B7E82;
 }
 
@@ -261,8 +263,9 @@ main{
 
 .cards-container{
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 1.5%;
+    flex-wrap: wrap;
+    column-gap: 1.5%;
+    row-gap: 15px;
 }
 
 .card-wrapper{
@@ -360,12 +363,13 @@ main{
 }
 
 .like-album{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     color: #717171;
     padding-right: 10px;
     font-size: 18px;
+}
+
+.like-album i{
+    padding-right: 10px;
 }
 
 .like-album .far:hover{
@@ -373,7 +377,7 @@ main{
 }
 
 .player{
-    flex-basis: 40%;
+    flex-basis: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,44 +464,12 @@ main{
 }
 
 
+/* MEDIAQUERIES ------------------------------- */
 
+@media screen and (min-width: 769px) and (max-width: 991px){
 
+    .card-wrapper {
+        width: calc(94% / 4);
+    }
 
-
-
-
-
-
-/* DEBUG */
-
-/* .main-container{
-    border: 2px solid purple;
 }
-
-.sidebar{
-    border: 2px solid greenyellow;
-}
-
-.logo, .playlist, .upgrade-container, .recent, .popular, .buttons{
-    border: 1px dashed red;
-}
-
-.nav-spotify, .options, .suggested, .timeline{
-    border: 1px dashed white;
-}
-
-.main-container{
-    border: 2px solid fuchsia;
-}
-
-.toolbar{
-   border: 2px solid royalblue;
-}
-
-.song, .timeline-wrapper, .tools{
-    border: 1px dashed aqua;
-}
- */
-
-
-
