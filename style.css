@@ -77,10 +77,18 @@ main{
 
 .main-menu li{
     margin-bottom: 10px;
+    position: relative;
 }
 
-.main-menu li:first-child{
-    border-left: 2px solid #ADFF2E;
+.main-menu li:first-child::before{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: #ADFF2E;
+    position: absolute;
+    left: 0px;
+    /* se usassi il border per fare la lineetta verde allora il testo si sposterebbe un po' orizzonatalmente quindi conviene usare l'after */
 }
 
 .playlist-wrapper{
@@ -125,6 +133,8 @@ main{
 .sidebar button:hover{
     color: white;
 }
+
+/* nav-footer */
 
 .install::after{
     content: '';
@@ -191,10 +201,7 @@ main{
 }
 
 .upgrade:hover{
-    font-size: 15px;
-    padding: 12px 52px;
-    border-radius: 50px;
-    margin-right: 10px;
+    transform: scale(1.1);
 }
 
 .main-content{
@@ -207,7 +214,7 @@ main{
     color: #7B7E82;
 }
 
-.options, .recent, .suggested, .popular{
+.options, .recent, .suggested, .popular, .section-title{
     margin-bottom: 45px;
 }
 
@@ -217,6 +224,10 @@ main{
     justify-content: center;
     column-gap: 20px;
     color: #7B7E82;
+}
+
+.options a {
+    white-space: nowrap;
 }
 
 .options a:hover{
@@ -238,9 +249,7 @@ main{
     margin-top: 5px;
 }
 
-.section-title{
-    margin-bottom: 45px;
-}
+/* Cards */
 
 .section-title h2{
     font-size: 24px;
@@ -252,19 +261,23 @@ main{
 
 .cards-container{
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    /* flex-wrap: wrap; */
+    gap: 1.5%;
 }
 
 .card-wrapper{
-    width: 178px;
+    width: calc(92.5% / 6);
+    /* 92.5% perchè tra le 6 card ci sono 5 spazi da 1.5% */
 }
 
 .card-header{
-    width: 178px;
-    height: 178px;
     margin-bottom: 15px;
     position: relative;
+}
+
+.main-content img{
+    width: 100%;
+    display: block; /* in questo modo l'overlay non fuoriesce dall'img */
 }
 
 .card-overlay{
@@ -279,15 +292,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: min(65px, 4vw);
 }
 
 .card-overlay:hover{
     opacity: 1;
-}
-
-.main-content img{
-    width: 100%;
+    transition: ease-in-out 0.3s;
 }
 
 .card-info{
