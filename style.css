@@ -368,7 +368,6 @@ main{
 
 .like-album{
     color: #717171;
-    padding-right: 10px;
     font-size: 18px;
 }
 
@@ -471,7 +470,7 @@ main{
 
 /* MEDIAQUERIES ------------------------------- */
 
-@media screen and (min-width: 769px) and (max-width: 991px){
+@media screen and (min-width: 769px) and (max-width: 992px){
 
     .card-wrapper {
         width: calc(95.5% / 4);
@@ -479,7 +478,7 @@ main{
 
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
 
     .cards-container {
         column-gap: 3%;
@@ -511,3 +510,61 @@ main{
     }
 
 }
+
+@media screen and (max-width: 575px){
+
+    .sidebar{
+        flex-basis: 47px;
+    }
+
+    .big-logo{
+        display: none;
+    }
+
+    .small-logo{
+        display: block;
+        height: 27px;
+        margin: 12px auto;
+    }
+
+    .icon-name, .playlist-wrapper, .install::after{
+        display: none;
+    }
+
+    .main-menu{
+        flex-grow: 1;
+    }
+
+    .install svg{
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Main-container --------- */
+
+    .cards-container {
+        column-gap: 3%;
+    }    
+
+    .card-wrapper {
+        width: calc(97% / 2);
+    }
+
+    /* Toolbar */
+
+    .song{
+        padding-right: 10px;
+        flex-basis: 20%;
+    }
+
+    .player{
+        padding-right: 10px;
+    }
+
+    .tools{
+        flex-basis: 25%;
+        column-gap: 5px;
+    }
+    
+}
+
