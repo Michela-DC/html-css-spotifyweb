@@ -448,12 +448,12 @@ main{
     display: none;
 }
 
-.timeline:hover .time-control{
-    display: block;
-}
-
 .timeline:hover .time-progress, .tools .timebar:hover .time-progress{
     background-color: #ADFF2E;
+}
+
+.timeline:hover .time-control{
+    display: block;
 }
 
 .tools{
@@ -573,6 +573,7 @@ main{
     
 }
 
+/* For smartphone screen size */
 
 @media screen and (max-width: 480px){
     .sidebar{
@@ -626,6 +627,10 @@ main{
         width: 180px;
     }
 
+    .card-overlay{
+        font-size: 60px;
+    }
+
     /* toolbar mobile */
     
     .toolbar-mobile{
@@ -661,10 +666,14 @@ main{
         font-size: 22px;
     }
 
-    .like-album i:first-child{
+    .fa-heart{
         padding-right: 15px;
     }
 
+    .fa-play:hover{
+        color: white;
+    }
+    
     /* main-menu mobile */
 
     .main-menu{
